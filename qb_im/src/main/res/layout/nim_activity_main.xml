@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qbao.newim.views.KPSwitchRootLinearLayout
+        android:id="@+id/chat_root_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.qbao.newim.views.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_weight="1.0"
+            android:layout_height="0dp"
+            android:background="#f7f7f7"
+            android:layout_width="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="#f7f7f7"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/pull_to_refresh_progress"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="24dp"
+                    android:minHeight="24dp"
+                    android:layout_gravity="center"
+                    android:indeterminate="true" />
+            </FrameLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/chat_list"
+                android:background="#f7f7f7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"/>
+
+        </com.qbao.newim.views.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:background="#999999"
+                android:layout_height="1px"/>
+            <include
+                layout="@layout/nim_chat_bottom_send"/>
+            <View
+                android:layout_width="match_parent"
+                android:background="#999999"
+                android:layout_height="1px"/>
+
+            <com.qbao.newim.views.KPSwitchPanelLinearLayout
+                android:id="@+id/chat_bottom_layout_big"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/chat_bottom_min_height"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <include
+                    android:id="@+id/sub_panel_1"
+                    layout="@layout/nim_chat_bottom_multimedia" />
+
+                <include
+                    android:id="@+id/sub_panel_2"
+                    layout="@layout/nim_chat_face"/>
+            </com.qbao.newim.views.KPSwitchPanelLinearLayout>
+        </LinearLayout>
+
+    </com.qbao.newim.views.KPSwitchRootLinearLayout>
+
+    <TextView
+        android:id="@+id/chat_audio_mode_speaker"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#99000000"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>

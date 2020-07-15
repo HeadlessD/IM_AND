@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_photo_picker_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/nim_pp_selector_btn_confirm"
+        android:clickable="true"
+        android:textColor="#35353f"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:paddingTop="6dp"
+        android:textSize="13sp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="@dimen/nim_pp_size_level2"
+        android:paddingRight="@dimen/nim_pp_size_level2"
+        android:maxLines="1"
+        android:text="@string/nim_pp_confirm" />
+
+    <ImageView
+        android:id="@+id/title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_centerVertical="true"
+        android:paddingRight="16dp"
+        android:src="@mipmap/nim_back"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_photo_picker_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_centerVertical="true"
+        android:maxEms="7"
+        android:textSize="16sp"
+        android:textColor="#35353f"
+        android:layout_toRightOf="@id/title_back"
+        android:paddingRight="@dimen/nim_pp_size_level1"
+        android:maxLines="1"
+        tools:text="所有图片" />
+
+    <ImageView
+        android:id="@+id/iv_photo_picker_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_photo_picker_title"
+        android:src="@mipmap/nim_pp_ic_arrow_down"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#999999"
+        android:layout_alignParentBottom="true"
+        android:layout_height="1px"/>
+
+</RelativeLayout>

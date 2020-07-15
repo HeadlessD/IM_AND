@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/friends_item_selector">
+
+    <FrameLayout
+        android:id="@+id/common_avatar_layout"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="16dp"
+        android:clickable="false"
+        android:duplicateParentState="true" >
+
+        <ImageView
+            android:id="@+id/commont_avatar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_gravity="left|bottom"
+            android:padding="1px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/nim_head" />
+
+        <TextView
+            android:id="@+id/msg_center_unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:background="@drawable/nim_red_circle"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="9sp"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/msg_center_list_item"
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:layout_marginLeft="14dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bt_agree"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/nim_red_invite_selector"
+                android:gravity="center"
+                android:text="添加"
+                android:textColor="#FF362C"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/bt_agree"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/msg_center_friend_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textColor="#262626"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/msg_center_last_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical|left"
+                    android:includeFontPadding="false"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLines="1"
+                    android:textColor="#888888"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_gravity="bottom"
+            android:background="#aaaaaa" />
+    </FrameLayout>
+
+</LinearLayout>

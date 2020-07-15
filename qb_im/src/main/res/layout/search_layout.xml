@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/search_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.qbao.newim.views.MultiEditText
+            android:id="@+id/keyword"
+            style="@style/QBInputStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@mipmap/nim_icon_dialog_search"
+            android:drawableRight="@mipmap/nim_icon_dialog_clear"
+            android:drawablePadding="12dp"
+            android:ems="10"
+            android:hint="@string/nim_search"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:inputType="text"
+            android:textColor="#262626"
+            android:textColorHint="#bbbbbb"
+            android:textSize="16sp" >
+        </com.qbao.newim.views.MultiEditText>
+    </LinearLayout>
+</LinearLayout>

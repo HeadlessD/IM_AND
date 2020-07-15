@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/chat_voice_layout"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_centerInParent="true"
+        android:background="#000000"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/chat_voice_text_hit"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/nim_chat_audio_record_hint_bg"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/nim_chat_audio_move_up_cancel"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/chat_voice_text_hit" >
+
+            <ImageView
+                android:id="@+id/chat_record_anim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/nim_chat_audio_record0" />
+
+            <ImageView
+                android:id="@+id/chat_record_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/nim_chat_audio_record_cancel"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/chat_voice_text_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:textColor="#ffffff"
+                android:textSize="90sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="215dp"
+    android:layout_height="105dp" >
+
+    <com.qbao.newim.views.BubbleImageView
+        android:id="@+id/chat_position_img"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/chat_tv_position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/chat_position_img"
+        android:layout_alignRight="@id/chat_position_img"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="@drawable/nim_chat_position_bg"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

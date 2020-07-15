@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/test_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="192.168.131.236"
+            android:minEms="8"
+            android:textSize="14sp" />
+
+        <RadioGroup
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/test_port"
+            android:id="@+id/rg_select_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rg_select_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="7700"/>
+            <RadioButton
+                android:id="@+id/rg_select_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7701"/>
+
+            <RadioButton
+                android:id="@+id/rg_select_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手动输入"/>
+        </RadioGroup>
+
+        <EditText
+            android:layout_below="@id/rg_select_group"
+            android:id="@+id/test_port_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:minEms="8"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/test_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/nim_blue_max_circle"
+            android:padding="10dp"
+            android:text="跳过登录"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/test_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40dp"
+            android:paddingLeft="16dp"
+            android:layout_marginRight="40dp"
+            android:textSize="14sp" />
+
+        <com.qbao.qbimsample.SpinnerEditText
+            android:id="@+id/test_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:hint="点击选择账号"
+            android:paddingLeft="16dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@id/test_password"
+            android:background="#bfa469"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/test_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/test_password"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/nim_red_button_style"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="账号登录"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

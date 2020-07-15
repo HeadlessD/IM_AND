@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:minHeight="@dimen/chat_avatar_size"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/chat_bubble_bottom_span"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <!-- 时间分割线 -->
+
+    <include layout="@layout/nim_chat_time_line" />
+
+    <RelativeLayout
+        android:id="@+id/chat_layout_content_container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false" >
+
+        <RelativeLayout
+            android:id="@+id/chat_layout_content_container2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:paddingRight="0dp" >
+
+            <LinearLayout
+                android:id="@+id/chat_content_top_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/chat_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:ellipsize="end"
+                    android:paddingBottom="1dp"
+                    android:maxLines="1"
+                    android:textColor="@color/common_gray_text_color"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/chat_content_top_space"
+                    android:layout_width="1dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/chat_layout_content_container3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chat_content_top_container"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/chat_layout_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/chat_layout_content_container3"
+                android:layout_alignTop="@id/chat_layout_content_container3"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/chat_layout_content_container3"
+                android:gravity="center"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/chat_tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/chat_img_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/nim_audio_unplay"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/chat_avatar_layout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:clickable="true" >
+            <ImageView
+                android:id="@+id/chat_img_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|bottom"
+                android:scaleType="fitXY"
+                android:src="@mipmap/nim_head" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

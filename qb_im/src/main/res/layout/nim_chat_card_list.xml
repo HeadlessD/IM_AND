@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/search"
+            layout="@layout/search_layout"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_marginTop="1px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search" />
+
+        <com.qbao.newim.views.quick_bar.QuickSideBarView
+            android:id="@+id/quickSideBarView"
+            android:layout_width="20dp"
+            android:layout_below="@id/search"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            app:sidebarItemHeight="16dp"
+            app:sidebarTextColor="@android:color/black"
+            app:sidebarTextColorChoose="@color/colorPrimary"
+            app:sidebarTextSize="@dimen/nim_quick_sidebar"
+            app:sidebarTextSizeChoose="@dimen/nim_quick_sidebar_choose" />
+
+        <com.qbao.newim.views.quick_bar.QuickSideBarTipsView
+            android:id="@+id/quickSideBarTipsView"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/quickSideBarView"
+            app:sidebarBackgroundColor="@color/colorPrimary"
+            app:sidebarTextColor="@android:color/white"
+            app:sidebarTextSize="20sp" />
+
+    </RelativeLayout>
+</LinearLayout>

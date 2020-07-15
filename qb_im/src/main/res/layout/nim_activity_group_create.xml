@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingBottom="6dp">
+
+                <LinearLayout
+                    android:id="@+id/search_layout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/nim_chat_edit_selector"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <HorizontalScrollView
+                        android:id="@+id/muti_select_friend_scroll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fadingEdge="none"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:scrollbars="none"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/muti_select_friend_avatar_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:gravity="bottom"
+                            android:orientation="horizontal" />
+                    </HorizontalScrollView>
+
+                    <com.qbao.newim.views.MultiEditText
+                        android:id="@+id/search_edittext"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@android:color/transparent"
+                        android:hint="搜索"
+                        android:maxHeight="80dp"
+                        android:maxLines="1"
+                        android:minHeight="28dp"
+                        android:minWidth="60dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="#ffc5c5c5"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/group_create_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_layout" />
+
+        <com.qbao.newim.views.quick_bar.QuickSideBarView
+            android:id="@+id/quickSideBarView"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            app:sidebarItemHeight="19dp"
+            app:sidebarTextColor="@android:color/black"
+            app:sidebarTextColorChoose="@color/colorPrimary"
+            app:sidebarTextSize="@dimen/nim_quick_sidebar"
+            app:sidebarTextSizeChoose="@dimen/nim_quick_sidebar_choose" />
+
+        <com.qbao.newim.views.quick_bar.QuickSideBarTipsView
+            android:id="@+id/quickSideBarTipsView"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/quickSideBarView"
+            app:sidebarBackgroundColor="@color/colorPrimary"
+            app:sidebarTextColor="@android:color/white"
+            app:sidebarTextSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

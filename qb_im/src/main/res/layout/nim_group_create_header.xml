@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_select_group"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:paddingLeft="15dp"
+        android:gravity="left|center_vertical"
+        android:background="@drawable/nim_layout_selector"
+        android:maxLines="1"
+        android:text="选择一个群"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+</LinearLayout>

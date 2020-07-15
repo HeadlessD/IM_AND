@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.qbao.newim.qbim">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--会话列表-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMSessionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--好友列表-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMContactActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--好友搜索-->
+        <activity
+            android:name="com.qbao.newim.activity.FriendSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--图片选择窗口-->
+        <activity
+            android:name="com.qbao.newim.views.imgpicker.NIM_PhotoPickerAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+        <!--图片预览窗口-->
+        <activity
+            android:name="com.qbao.newim.views.imgpicker.NIM_PhotoPreviewAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--通讯录界面-->
+        <activity
+            android:name="com.qbao.newim.activity.PhoneContactsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--趣味相投界面-->
+        <activity
+            android:name="com.qbao.newim.activity.CongenialActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--私聊界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMScChatActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:theme="@style/NIMPPTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--群聊界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMGcChatActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:theme="@style/NIMPPTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--商家聊天界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMBcChatActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:theme="@style/NIMPPTheme"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!--好友验证界面-->
+        <activity
+            android:name="com.qbao.newim.activity.FriendVerifyActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--用户信息界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMUserInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Main" />
+
+        <!--新的好友界面-->
+        <activity
+            android:name="com.qbao.newim.activity.FriendRequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--转发选择会话界面-->
+        <activity
+            android:name="com.qbao.newim.activity.ChooseSessionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--聊天设置界面-->
+        <activity
+            android:name="com.qbao.newim.activity.ChatSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--所有群聊信息-->
+        <activity
+            android:name="com.qbao.newim.activity.GroupAllActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--创建群聊界面-->
+        <activity
+            android:name="com.qbao.newim.activity.GroupCreateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--群聊选择界面-->
+        <activity
+            android:name="com.qbao.newim.activity.GroupSelectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--群聊邀请和群成员界面-->
+        <activity
+            android:name="com.qbao.newim.activity.GroupMemberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--名字编辑界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMEditNameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--群管理界面-->
+        <activity
+            android:name="com.qbao.newim.activity.GroupManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--二维码名片-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMEncodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--群主查看邀请详情界面-->
+        <activity
+            android:name="com.qbao.newim.activity.GroupInviteDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--群公告详情界面-->
+        <activity
+            android:name="com.qbao.newim.activity.GroupRemarkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--群助手详情界面-->
+        <activity
+            android:name="com.qbao.newim.activity.GroupAssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--群扫描详情界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMScanGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--地图位置界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMBaiduMapActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--选择联系人界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMChooseCardActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--黑名单界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMBlackListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--权限申请界面-->
+        <activity
+            android:name="com.qbao.newim.permission.PermissionActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="standard"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            android:theme="@style/permission_PermissionActivity" />
+
+        <!--消息提醒设置界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme" />
+
+        <!--用户举报界面-->
+        <activity
+            android:name="com.qbao.newim.activity.NIMReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/NIMPPTheme" />
+
+        <activity android:name="com.qbao.newim.activity.NIMWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NIMPPTheme"/>
+
+        <!--扫一扫-->
+        <activity
+            android:name="com.qbao.newim.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:keepScreenOn="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.qianwang.qianbao.im.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="qr"
+                    android:scheme="qbao" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="paRFpFYLa4Op5uGRvG5hf4351zjdG4rj" />
+    </application>
+
+</manifest>

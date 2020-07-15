@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#303d42">
+
+    <com.qbao.newim.views.imgpicker.NIM_ImageView
+        android:id="@+id/iv_item_photo_picker_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:bga_iv_square="true"
+        tools:src="@mipmap/nim_pp_ic_holder_dark" />
+
+    <View
+        android:id="@+id/v_picker"
+        android:background="#20000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/iv_item_photo_picker_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:paddingBottom="@dimen/nim_pp_size_level2"
+        android:paddingLeft="@dimen/nim_pp_size_level2"
+        android:paddingRight="@dimen/nim_pp_size_level1"
+        android:paddingTop="@dimen/nim_pp_size_level1"
+        android:src="@mipmap/nim_pp_ic_cb_normal" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/nim_layout_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_marginRight="4dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/iv_group_user_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@mipmap/nim_head" />
+
+            <TextView
+                android:id="@+id/tv_group_owner"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="#3ec998"
+                android:background="#44000000"
+                android:textSize="9sp"
+                android:layout_centerHorizontal="true"
+                android:text="群主" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_weight="2"
+            android:id="@+id/tv_group_user_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:text="xxx"
+            android:textColor="#262626"
+            android:textSize="15sp" />
+
+        <CheckBox
+            android:id="@+id/tv_group_cb"
+            android:visibility="visible"
+            android:layout_marginRight="16dp"
+            android:button="@drawable/nim_radio_check_style"
+            android:layout_width="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

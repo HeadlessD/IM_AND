@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp">
+
+            <RadioButton
+                android:id="@+id/report_radio_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/nim_radio_style"
+                android:padding="16dp"
+                android:text="法律法规" />
+
+            <RadioButton
+                android:id="@+id/report_radio_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/nim_radio_style"
+                android:padding="16dp"
+                android:text="色情暴力" />
+
+            <RadioButton
+                android:id="@+id/report_radio_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/nim_radio_style"
+                android:padding="16dp"
+                android:text="虚假诈骗" />
+
+            <RadioButton
+                android:id="@+id/report_radio_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/nim_radio_style"
+                android:padding="16dp"
+                android:text="骚扰" />
+
+            <RadioButton
+                android:id="@+id/report_radio_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/nim_radio_style"
+                android:padding="16dp"
+                android:text="其他" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#999999" />
+
+        <EditText
+            android:id="@+id/report_edit"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="24dp"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="请输入举报内容"
+            android:padding="16dp"
+            android:textColor="#232222"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

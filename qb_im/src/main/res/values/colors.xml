@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#616161</color>
+    <color name="colorPrimaryDark">#616161</color>
+    <color name="colorAccent">#607D8B</color>
+    <color name="common_gray_bg_color">#e6e6e6</color>
+    <color name="spinner_bg">#333244</color>
+    <color name="white_text_color">#F0F0F0</color>
+    <color name="gray_color">#4b4b58</color>
+    <color name="bg">#F0F0F0</color>
+    <color name="color_light_blue">#00DDB6</color>
+    <color name="divider_color">#10000000</color>
+    <color name="btn_unpress_color">#0d0d0d</color>
+    <color name="chat_face_tab_pressed">#dcdcdc</color>
+    <color name="chat_face_tab">#f0f0f0</color>
+    <color name="chat_app_panel_normal">#f2f2f2</color>
+    <color name="chat_app_panel_pressed">#fefefe</color>
+    <color name="chat_audio_record_hint">#ff0000</color>
+    <color name="common_gray_text_color">#888888</color>
+    <color name="clickable_bg_color">#6aa7e9</color>
+    <color name="link_color">#406ca2</color>
+    <color name="chat_receive_textcolor">#262626</color>
+    <color name="common_color_ebebeb">#ebebeb</color>
+    <!-- 图片处于选中状态时的遮罩层颜色 -->
+    <color name="nim_pp_photo_selected_mask">#4D000000</color>
+    <color name="nim_pp_activity_bg">#1A1A1A</color>
+    <color name="nim_pp_loading_progress_startColor">@android:color/white</color>
+    <color name="nim_pp_loading_progress_centerColor">#17C7D1</color>
+    <color name="nim_pp_loading_progress_endColor">#CC17C7D1</color>
+
+    <!-- 右上角确认按钮不可用时的颜色 -->
+    <color name="nim_pp_btn_confirm_disabled">#d1cfcf</color>
+    <!-- 右上角确认按钮可用时的颜色 -->
+    <color name="nim_pp_btn_confirm_enabled">#5a5b5b</color>
+    <!-- 右上角确认按钮按下时的颜色 -->
+    <color name="nim_pp_btn_confirm_pressed">@color/colorAccent</color>
+    <color name="nim_pp_navigationBarColor">@android:color/black</color>
+    <color name="default_background_color">@android:color/transparent</color>
+    <color name="default_progress_color">#33b5e5</color>
+    <color name="default_stroke_color">#33b5e5</color>
+    <color name="default_text_color">#333333</color>
+    <color name="common_color_b82e1b">#b82e1b</color>
+    <color name="common_red">#ff362c</color>
+    <color name="common_color_d9d9d9">#d9d9d9</color>
+    <color name="common_color_e1e1df">#e1e1df</color>
+    <color name="viewfinder_mask">#80000000</color>
+
+    <color name="item_normal_color">#ffffff</color>
+    <color name="item_top_color">#fafafa</color>
+    <color name="item_dialog_press_color">#d6d4d4</color>
+    <color name="item_press_color">#FFD9D8D8</color>
+    <color name="item_dialog_normal_color">#f7f7f7</color>
+    <color name="user_accept_pressed">#56a799</color>
+    <color name="user_accept_normal">#00DDB6</color>
+</resources>

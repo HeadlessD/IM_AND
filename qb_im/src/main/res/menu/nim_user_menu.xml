@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_edit_name"
+        android:icon="@mipmap/nim_icon_user_edit"
+        android:title="修改备注名"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_report_user"
+        android:icon="@mipmap/nim_icon_report"
+        android:title="举报"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_delete_user"
+        android:icon="@mipmap/nim_icon_delete"
+        android:title="删除"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_black_list"
+        android:icon="@mipmap/nim_icon_black_list"
+        android:title="加入黑名单"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

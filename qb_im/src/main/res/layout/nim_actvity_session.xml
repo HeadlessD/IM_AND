@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_network_error"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/nim_common_list_item_selector"
+        android:drawableLeft="@drawable/nim_chat_send_status"
+        android:drawablePadding="10dp"
+        android:gravity="left|center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="15dp"
+        android:text="未连接"
+        android:textColor="#999999"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:fadingEdge="none" />
+
+</LinearLayout>

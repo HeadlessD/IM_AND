@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="left" >
+
+    <LinearLayout android:id="@+id/chat_layout_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:focusable="false" >
+
+        <TextView
+            android:id="@+id/chat_tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="30dp"
+            android:gravity="left"
+            android:textSize="19sp"
+            android:textColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/chat_audio_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/chat_tv_duration_length"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/chat_audio_min_length"
+            android:maxWidth="150dp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/chat_img_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="15.0dip"
+            android:minWidth="15.0dip"
+            android:scaleType="centerInside"
+            android:src="@mipmap/nim_chat_audio_right_playing03" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/chat_img_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

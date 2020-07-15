@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="30dp">
+
+    <ImageView
+        android:id="@+id/repeat_dialog_head"
+        android:layout_width="40dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/nim_head"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/repeat_dialog_name"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:text="姓名"
+        android:textColor="#2e2d2d"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

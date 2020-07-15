@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nim_pp_activity_bg">
+
+    <com.qbao.newim.views.imgpicker.NIM_HackyViewPager
+        android:id="@+id/hvp_photo_picker_preview_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+    <RelativeLayout
+        android:id="@+id/rl_photo_picker_preview_choose"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary">
+
+        <TextView
+            android:id="@+id/tv_photo_picker_preview_choose"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/nim_pp_size_level2"
+            android:clickable="true"
+            android:drawableLeft="@mipmap/nim_pp_ic_cb_normal"
+            android:drawablePadding="@dimen/nim_pp_textSize_level1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/nim_pp_size_level2"
+            android:paddingRight="@dimen/nim_pp_size_level2"
+            android:text="@string/nim_pp_choose"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.qbao.newim.views.MultiEditText
+                android:id="@+id/keyword"
+                style="@style/QBInputStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_toLeftOf="@+id/submit"
+                android:drawableLeft="@mipmap/nim_icon_dialog_search"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/nim_icon_dialog_clear"
+                android:ems="10"
+                android:hint="@string/nim_search_friends_input_hit"
+                android:imeOptions="actionSearch"
+                android:maxLines="1"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#262626"
+                android:textColorHint="#bbbbbb"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="54dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/nim_red_button_style"
+                android:gravity="center"
+                android:text="@string/nim_search"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/addFriendWithContacts"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/nim_friends_item_selector"
+            android:drawableLeft="@mipmap/nim_icon_qb_contacts"
+            android:drawablePadding="16dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/nim_add_friends_with_contacts"
+            android:textColor="#262626"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:background="#e6e6e6" />
+
+        <Button
+            android:id="@+id/addCongenial"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/nim_friends_item_selector"
+            android:drawableLeft="@mipmap/nim_icon_qb_fun"
+            android:drawablePadding="16dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/nim_add_congenial"
+            android:textColor="#262626"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:background="#e6e6e6" />
+
+        <Button
+            android:id="@+id/addPublisher"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/nim_friends_item_selector"
+            android:drawableLeft="@mipmap/nim_icon_qb_service"
+            android:drawablePadding="16dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/nim_add_publisher"
+            android:textColor="#262626"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:background="#e6e6e6" />
+
+        <Button
+            android:id="@+id/scanQRCode"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/nim_friends_item_selector"
+            android:drawableLeft="@mipmap/nim_icon_qb_sweep"
+            android:drawablePadding="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:gravity="left|center_vertical"
+            android:text="@string/nim_scan_qrcode"
+            android:textColor="#262626"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="16dp"
+            android:background="#e6e6e6" />
+
+</LinearLayout>

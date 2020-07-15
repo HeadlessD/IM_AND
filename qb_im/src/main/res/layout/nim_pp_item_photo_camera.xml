@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#303d42">
+
+    <com.qbao.newim.views.imgpicker.NIM_ImageView
+        android:id="@+id/iv_item_photo_camera_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@mipmap/nim_pp_ic_gallery_camera"
+        app:bga_iv_square="true"/>
+
+    <TextView
+        android:id="@+id/tv_item_photo_picker_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_item_photo_camera_camera"
+        android:layout_marginBottom="@dimen/nim_pp_size_level3"
+        android:gravity="center"
+        android:text="@string/nim_pp_take_picture"
+        android:textColor="#adb2bb"
+        android:textSize="@dimen/nim_pp_textSize_level1"/>
+
+</RelativeLayout>

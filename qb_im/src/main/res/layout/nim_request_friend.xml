@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/addDesc"
+        android:maxLength="26"
+        android:gravity="left|top"
+        android:hint="请输入验证消息"
+        android:background="@android:color/transparent"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@android:color/black"
+        android:imeOptions="actionSend"
+        android:textColorHint="#bbbbbb"
+        android:textSize="15sp"/>
+</LinearLayout>

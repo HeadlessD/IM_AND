@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#ffffff"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="群聊邀请确认"
+            android:textColor="#353535"
+            android:textSize="14sp" />
+
+        <com.qbao.newim.views.SwitchButton
+            android:id="@+id/group_manager_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            app:kswBackColor="#969696"
+            app:kswThumbColor="#75d249"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_manager_switch"
+            android:layout_marginTop="10dp"
+            android:text="启用后，群成员需群主确认才能邀请朋友进群。扫描二维码进群将同时停用"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_manager_move"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/nim_layout_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="群主管理权转让"
+            android:textColor="#353535"
+            android:textSize="14sp"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/nim_right_arrows"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

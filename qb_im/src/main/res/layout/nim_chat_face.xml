@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_list_face_root"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/face_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/face_pager_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/nim_qb_face_bottom"
+            android:orientation="horizontal"
+            android:gravity="top|center_horizontal"
+            android:visibility="visible">
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout android:id="@+id/chat_face_tab_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/nim_qb_face_tab_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/chat_face_tab"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/nim_chat_face_tab_selector"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/nim_chat_face_tab_icon_selector" />
+
+        <ImageView
+            android:id="@+id/chat_qbface_tab"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/nim_chat_face_tab_selector"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/nim_chat_qbface_tab_icon_selector" />
+    </LinearLayout>
+
+</LinearLayout>

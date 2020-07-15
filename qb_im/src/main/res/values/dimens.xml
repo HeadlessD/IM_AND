@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="toolbar_padding_top">0dp</dimen>
+    <dimen name="chat_avatar_size">40dp</dimen>
+    <dimen name="chat_bottom_min_height">260dp</dimen>
+    <dimen name="chat_audio_record_move_span">30dp</dimen>
+    <dimen name="min_panel_height">260dp</dimen>
+    <dimen name="max_panel_height">380dp</dimen>
+    <dimen name="chat_audio_min_length">10dp</dimen>
+    <dimen name="chat_audio_step_length">8dp</dimen>
+    <dimen name="min_keyboard_height">80dp</dimen>
+    <dimen name="chat_bubble_bottom_span">19dp</dimen>
+    <dimen name="chat_picture_height">140dp</dimen>
+    <dimen name="chat_picture_width">110dp</dimen>
+    <dimen name="nim_pp_size_level1">4dp</dimen>
+    <dimen name="nim_pp_size_level2">8dp</dimen>
+    <dimen name="nim_pp_size_level3">12dp</dimen>
+    <dimen name="nim_pp_textSize_level1">12sp</dimen>
+    <dimen name="nim_pp_size_photo_divider">2dp</dimen>
+    <dimen name="nim_qb_gif_show_size">30dp</dimen>
+    <dimen name="nim_qb_face_tab_height">45dp</dimen>
+    <dimen name="nim_qb_face_bottom">10dp</dimen>
+    <dimen name="toolbar_size">48dp</dimen>
+    <dimen name="nim_friend_search_edit_min_width">60dp</dimen>
+    <dimen name="nim_thumb_ripple_size">42dp</dimen>
+    <dimen name="nim_thumb_solid_inset">11dp</dimen>
+    <dimen name="nim_thumb_shadow_inset">11dp</dimen>
+    <dimen name="nim_thumb_shadow_inset_top">11dp</dimen>
+    <dimen name="nim_thumb_shadow_inset_bottom">10dp</dimen>
+
+    <dimen name="nim_thumb_solid_size">20dp</dimen>
+    <dimen name="nim_thumb_shadow_size">21dp</dimen>
+    <dimen name="nim_thumb_shadow_offset">2dp</dimen>
+    <dimen name="nim_textSize_quick_sidebar_tips">20sp</dimen>
+    <dimen name="nim_quick_sidebar_choose">15sp</dimen>
+    <dimen name="nim_quick_sidebar">10sp</dimen>
+    <dimen name="height_quick_sidebar_item">20dp</dimen>
+</resources>

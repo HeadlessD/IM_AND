@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_bottom_bar_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f1f1f1"
+    android:paddingTop="2dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="2dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/chat_bottom_bar_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:id="@+id/chat_bottom_left_layout"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/chat_add_audio"
+                android:background="@drawable/nim_chat_add_audio_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/chat_layout_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_marginRight="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal" >
+
+            <com.qbao.newim.views.FaceEditText
+                android:id="@+id/chat_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="4"
+                android:hint=""
+                android:paddingLeft="10dp"
+                android:visibility="visible"
+                android:theme="@style/MyEditText"
+                android:minHeight="40dp"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+            <com.qbao.newim.views.AudioRecordButton
+                android:id="@+id/chat_record_audio"
+                android:layout_width="match_parent"
+                android:background="@drawable/nim_chat_voice_normal"
+                android:gravity="center"
+                android:text="@string/nim_chat_press_speak"
+                android:layout_gravity="center"
+                android:textColor="#929292"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:visibility="gone"
+                android:layout_height="32dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/chat_multimedia_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@drawable/nim_chat_add_face_selector" />
+
+
+        <LinearLayout
+            android:id="@+id/chat_bottom_right_layout"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/chat_add_multimedia"
+                android:visibility="visible"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nim_chat_add_multimedia_selector" />
+
+            <Button
+                android:id="@+id/chat_btn_send"
+                android:layout_width="42dp"
+                android:layout_height="31dp"
+                android:background="@drawable/nim_chat_send_btn_selector"
+                android:gravity="center"
+                android:shadowColor="#ffffff"
+                android:shadowDy="1"
+                android:shadowRadius="0.2"
+                android:maxLines="1"
+                android:text="发送"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

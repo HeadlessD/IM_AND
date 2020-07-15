@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="chat_audio_size">102400</integer>
+    <integer name="chat_body_max_length">1000</integer>
+</resources>

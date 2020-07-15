@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_gridview_face"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:numColumns="7"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:verticalSpacing="16dp"
+    android:horizontalSpacing="5dp"
+    android:listSelector="#00000000"
+    android:stretchMode="columnWidth"/>
